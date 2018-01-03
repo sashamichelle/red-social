@@ -81,7 +81,7 @@
 	height: auto;
 }
 .txt {
-	width: 320px;
+	width: 278px;
 	margin-left: 10px;
 }
 
@@ -145,7 +145,7 @@ width: 50%;
 .todo {
 	background-image: url(../img/I5nl1Fn.jpg);
 	width: 300px;
-  margin-top: 10px;
+  margin-top: -10px;
 }
 
 .post {
