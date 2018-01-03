@@ -1,23 +1,37 @@
-/*estilos de la pagina*/
-
-*{
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+* {
+	margin: 0;
+	padding: 0;
 }
 
-.caja-1{
-	height: 100vh;
+#logo1 {
+	width: 400px;
+	height: auto;
+	text-align: center;
+}
+
+#info {
 	width: 100%;
-	background-color:#e2e0e0 ;
-}
-.img1{
-	height:auto;
-	width:50%;
+	padding: 10px;
+	margin-top: 10px;
 }
 
+.info2 {
+	text-align: center;
+}
+
+.fa-user-circle-o {
+	color: #aaa7a7 ;
+  font-size: 150px;
+  left: 37%;
+  position: relative;
+}
+
+#foot {
+	width: 100%;
+	text-align: center;
+	background-color: #95dbcc;
+	border-style: none;
+}
 #splashscreen{
   position:absolute;
   width:100%;
@@ -30,44 +44,130 @@
   padding-top:230px;
   font-size:20px; font-family:Arial;
 }
+.log-bar{
+	height:auto;
+	width:50px;
+}
+.container-fluid{
+	padding-left: 0;
+	padding-right: 0;
+}
+.barra{
+	background: -webkit-linear-gradient(#ff7fda, #560331);
+  background: -moz-linear-gradient(#ff7fda, #560331);
+  background: -o-linear-gradient(#ff7fda, #560331);
+  width: 100%;
+}
+.navbar-toggle{
+	top: 49px;
+};
+.caja-3{
+	height:400px;
+	width: 100%;
 
-/*estilos de los modales*/
-#info {
-    width: 100%;
-    padding: 10px;
-    margin-top: 10px;
 }
 
-.info2 {
-    text-align: center;
+.perfil{
+	width:100%;
+	height: 60vh;
+	object-fit:  cover;
+	margin-top: -23px;
+	background-position: 30% 72%;
+};
+
+.todo {
+	background-image: url(../img/I5nl1Fn.jpg);
+	width: 350px;
+	height: auto;
+}
+.txt {
+	width: 320px;
+	margin-left: 10px;
 }
 
-.fa-user-circle-o {
-    color: #aaa7a7 ;
-    font-size: 150px;
-     left: 37%;
-    position: relative;
+#cont div {
+width: 285px;
+height: auto;
+margin-top: 5px;
+background-color: #fff;
+padding: 20px;
+border-radius: 7px;
+margin-left: 10px;
+
 }
 
-#foot{
-    width: 100%;
-    text-align: center;
-    background-color: #95dbcc ;
-    border-style: none;
+.cont2 {
+	margin-top: 230px;
+	text-align: left;
+	bottom: 200px;
+	margin-right: 70px;
+	background-color: transparent;
+	position: relative;
+}
+
+button {
+	background-color: #CAA8C2;
+	color: #fff;
+	padding: 8px;
+	padding-right: 20px;
+	padding-left: 20px;
+	font-weight: bold;
+	margin-top: 10px;
+	border-style: none;
+	border-radius: 5px;
+	display: inline-block;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+.fa-plus{
+	margin-top: 18px;
+	font-size: 30px;
+}
+
+#usuario{
+height: 50%;
+width: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+.container-fluid>.navbar-header {
+	margin-top: -51px;
+}
+
+.todo {
+	background-image: url(../img/I5nl1Fn.jpg);
+	width: 300px;
+  margin-top: 10px;
+}
+
+.post {
+	text-align: center;
+	color: #fff;
+	margin-top: 10px;
 }
 
 /*medias queries para el logo*/
 @media(max-width:600px){
- .img1{
+ #logo1{
 		height:auto;
 		width: 100%;
 		margin-top:200px;
+		position: relative;
+		bottom:300px;
 	};
 	.fa-user-circle-o{
 	};
 };
 @media(min-width:600px){
- .img1{
+ #logo1{
 	height:auto;
 	width:50%;
 	};
