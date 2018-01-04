@@ -11,6 +11,12 @@
 		height: auto;
 		width: 54px;
 		bottom: 9px;
+		top: -9px;
+	}
+
+	.a1{
+		height: auto;
+		width: 85px;
 	}
 
 	.fa-globe{
@@ -18,7 +24,6 @@
     left: 33px;
     top: 0;
 	};
-};
 
 @media(min-width:600px){
 	#logo1{

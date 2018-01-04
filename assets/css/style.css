@@ -3,6 +3,11 @@
   padding: 0;
 }
 
+.container-fluid {
+padding-right:0px;
+padding-left:0px; 
+};
+
 #logo1 {
   width: 400px;
   height: auto;
@@ -69,6 +74,7 @@
    height: auto;
     width: 68px;
     position: relative;
+    top: 40px;
 }
 
 .barra {
