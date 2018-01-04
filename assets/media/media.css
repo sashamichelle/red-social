@@ -1,0 +1,28 @@
+/*medias queries para el logo*/
+@media(max-width:600px){
+	#logo1{
+		height:auto;
+		width: 100%;
+		margin-top:200px;
+		position: relative;
+	}
+
+	.logop{
+		height: auto;
+		width: 54px;
+		bottom: 9px;
+	}
+
+	.fa-globe{
+    position: relative;
+    left: 33px;
+    top: 0;
+	};
+};
+
+@media(min-width:600px){
+	#logo1{
+		height:auto;
+		width:50%;
+	}
+};
