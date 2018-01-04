@@ -1,5 +1,5 @@
 /*medias queries para el logo*/
-@media(max-width:800px){
+@media(max-width:600px){
 	#logo1{
 		height:auto;
 		width: 100%;
@@ -19,38 +19,37 @@
 		width: 85px;
 	}
 
-	.todo{
-	margin-top: -75px;
-	width:100%;
-	height: auto;
-	}
-
 	.fa-globe{
-    position: relative;
-    left: 33px;
-    top: 0;
-  }
-.nombreusuario {
-    color: #fff;
-    font-size: 21px;
-    position: absolute;
-    top: 267px;
-    left: 183px;
-}
-.amigo{
-	width: 100%;
-	height: auto;
-}
-.amigo{
-	margin-top: 100px;
-}
-
+		position: relative;
+		left: 33px;
+		top: 0;
 	};
 
+	.todo{
+		margin-top:-75px;
+		width: 100%;
+	}
+
+	div .caja-3 {
+		width: 100%;
+	}
+
+	.perfil1 {
+		width: 100%;
+	}
+};
 
 @media(min-width:600px){
 	#logo1{
 		height:auto;
 		width:50%;
+	}
+
+	.todo {
+		width: 100%;
+	}
+
+	.caja-3 {
+		width: 100%;
 	}
 };
