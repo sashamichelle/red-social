@@ -1,5 +1,5 @@
 /*medias queries para el logo*/
-@media(max-width:600px){
+@media(max-width:800px){
 	#logo1{
 		height:auto;
 		width: 100%;
@@ -19,11 +19,26 @@
 		width: 85px;
 	}
 
+	.todo{
+	margin-top: -75px;
+	width:100%;
+	height: auto;
+	}
+
 	.fa-globe{
     position: relative;
     left: 33px;
     top: 0;
+  }
+.nombreusuario {
+    color: #fff;
+    font-size: 21px;
+    position: absolute;
+    top: 267px;
+    left: 183px;
+}
 	};
+
 
 @media(min-width:600px){
 	#logo1{
