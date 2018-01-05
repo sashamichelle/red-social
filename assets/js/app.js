@@ -88,7 +88,56 @@ function savePin() {
         "<div class='rear'>" +
         "</div>" +
         "</div>");
-  };
+};
 
+/*añadir contactos y eliminarlos*/
+ $('#add').click(function(){
+    /*
+    * Guardo en la variable name lo ingresado en el input con clase name
+    */
+    var name = $('.name').val();
+    /*
+    * Limpio el input
+    */
+    /*
+    * Guardo en la variable phone lo ingresado en el input con clase phone
+    */
+    var phone = $('.img').val();
+    /*
+    * Limpio el input
+    */
+
+
+    /*
+    * Guardo en la variable contenedor el div vacío con id cont que está
+    * en el html, donde se guardarán los contactos
+    */
+    var contenedor = $('#contcontacto');
+    /*
+    * Le agrego al contenedor la estructura que necesito con el valor de
+    * las variables name y phone
+    */
+    contenedor.append('<div class="container contacto"><span class="contactito">' + name + phone + '<a href="#!" class="secondary-content"><i class="fa fa-trash basura" aria-hidden="true"></i></a>' + '</span></div>'+ '<br>');
+    /*
+    * Dejo la llamada hecha a la función que borra el contacto
+    */
+    deleteContact();
+  })
+
+  /*
+  * Función que borra el contacto
+  */
+  function deleteContact(){
+    /*
+    * Esta función se ejecuta una vez que se le da click al ícono de la basura
+    */
+    $('.basura').click(function(){
+      /*
+      * toma el ícono basura al que se le hizo click (referencia)
+      * y elimina al padre del padre de ese padre
+      */
+      $(this).parent().parent().parent().remove();
+    })
+  }
 
 
