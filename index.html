@@ -34,8 +34,8 @@
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
       </div>
-      <div class="modal-body center-block">
-        <img class="fotousuario" src="assets/img/fotousuario.png" alt="">
+      <div class="modal-body center-block" id="fotoc">
+        <img class="fotousuario" src="assets/img/fotousuario.svg" alt="">
         <input id="info1" type="text" class="info" placeholder="Nombre de Usuario o Email">
         <input id="info1" type="text" class="info" placeholder="Contraseña">
         <h5 class="info2">Si olvidaste tu contraseña ingresa <a href="">Aquí</a></h5>
@@ -49,7 +49,6 @@
   </div><!-- Fin modal inicio de sesion -->
 
   <!-- MODAL PARA REGISTRARSE -->
-
   <div class="modal fade" id="registrate" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
@@ -78,69 +77,22 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title">Mi Perfil</h4>
+          <h3 class="modal-title">Mi Perfil</h3>
         </div>
-        <div class="modal-body">
-          <p>Nombre del usuario</p>
-          <img src="assets/img/niñaperfil.jpg" alt="niña" id=usuario>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, deserunt similique voluptatum magni, itaque laborum quisquam a quibusdam animi sunt!</p>
+        <div class="modal-body" id="fondo">
+          <img src="assets/img/niñaperfil.jpg" alt="niña" id=usuario><span class="colorp"><h1> Nombre del usuario</h1></span>
+          <h3 class="colorp">Estado</h3>
+          <p class="colorp">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe blanditiis vel minus nihil dolorum voluptatum aperiam sed necessitatibus cupiditate, laudantium voluptatibus facere laborum eius, vitae alias nobis. Aut, enim, ea.</p>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-          <button type="button" class="btn btn-primary">Guardar</button>
+          <button type="button" class="btn btn-primary btnp"><i class="fa fa-cog" aria-hidden="true"></i>
+          </button>
+          <button type="button" class="btn btn-default btnp" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i>
+          </button>
         </div>
       </div>
     </div>
   </div><!-- Fin modal perfil -->
-
-  <!-- MODAL DE SELECCION DE IDIOMA -->
-  <div class="modal fade" tabindex="-1" role="dialog" id="idioma">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title">Idioma</h4>
-        </div>
-        <div class="modal-body">
-          <p><img class="banderas" src="assets/img/española.png" alt=""> Español</p>
-          <p><img class="banderas" src="assets/img/britanica.jpg" alt=""> Inglés</p>
-          <p><img class="banderas" src="assets/img/alemana.png" alt=""> Alemán</p>
-          <p><img class="banderas" src="assets/img/francesa.png" alt=""> Frances</p>
-        </div>
-        <div class="modal-footer">
-          <button id="btnx" type="button" class="btn btn-default" data-dismiss="modal">X</button>
-        </div>
-      </div>
-    </div>
-  </div><!-- Fin modal seleccion idioma -->
-
-  <!--MODAL PARA AÑADIR O ELMINAR AMIGOS-->
-  <div id="añadir" class="modal">
-    <div class="modal fade" tabindex="-1" role="dialog" id="añadir" >
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title">Añadir amigo</h4>
-          </div>
-          <div class="modal-body">
-            <div class="row">
-              <div class="col-lg-4 columna-nombre">
-                <input id="info" type="text" class="info" placeholder="Nombre de tu amigo">
-              </div>
-              <div class="col-lg-4">
-                <span><a href="#"></a><input id="info" type="text" class="info imagen" placeholder="Imagen de contacto"></span>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-              <button type="button" class="btn btn-primary">Guardar</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div><!-- Fin modal añadir o eliminar amigos -->
 
   <!--MODAL DE FAVORITOS-->
   <div class="modal fade" tabindex="-1" role="dialog" id="favoritos1" >
@@ -148,137 +100,88 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title">Mis favoritos</h4>
+          <h3 class="modal-title">Mis favoritos</h3><span><i class="fa fa-star" aria-hidden="true"></i></span>
         </div>
-        <div class="modal-body">
-          <div class="row">
-            <div class="col-lg-12 columna-nombre">
-              <p>Lo sentimos, no tienes favoritos ni marcados.</p>
+        <div class="modal-body" id="fondo2">
+          
+          
+          <p><i class="fa fa-check-square-o" aria-hidden="true"></i>
+            <img class="a1" src="assets/img/1.jpg" alt=""><span> Angélica</span></p>
+            <p><i class="fa fa-check-square-o" aria-hidden="true"></i>
+              <img class="a1" src="assets/img/3.jpg" alt=""><span> Thomas Rothkegel</span></p>
+              <p><i class="fa fa-check-square-o" aria-hidden="true"></i>
+                <img class="a1" src="assets/img/5.jpg" alt=""><span> Hans</span></p>
+                
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary btnp2"><i class="fa fa-cog" aria-hidden="true"></i>
+                  </button>
+                  <button type="button" class="btn btn-default btnp2" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-            <button type="button" class="btn btn-primary">Guardar</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div><!-- Fin modal de favoritos -->
+          </div><!-- Fin modal de favoritos -->
 
-  <!--MODAL EDITAR PERFIL-->
-  <div class="modal fade" tabindex="-1" role="dialog" id="editar" >
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title">Editar perfil</h4>
-        </div>
-        <div class="modal-body">
-          <div class="row">
-            <div class="col-lg-12 columna-nombre">
-              <input id="info" type="text" class="info" placeholder="Cambiar tu nombre">
-              <input id="info" type="text" class="info" placeholder="Cambiar tu correo">
+          <!--MODAL PARA AÑADIR O ELMINAR AMIGOS-->
+          <div id="añadir" class="modal">
+            <div class="modal fade" tabindex="-1" role="dialog" id="añadir" >
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Añadir amigo</h4>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-lg-4 columna-nombre">
+                        <input id="info" type="text" class="info" placeholder="Nombre de tu amigo">
+                      </div>
+                      <div class="col-lg-4">
+                        <span><a href="#"></a><input id="info" type="text" class="info imagen" placeholder="Imagen de contacto"></span>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                      <button type="button" class="btn btn-primary">Guardar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default"data-dismiss="modal">Cerrar</button>
-            <button type="button" class="btn btn-primary">Guardar</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div><!-- Fin modal editar perfil-->
+          </div><!-- Fin modal añadir o eliminar amigos -->
 
-  <!-- Fin de modales -->
-  <!--NAVBAR-->
+          <!-- Fin de modales -->
 
-  <div class="caja-2 barra">
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand barra" href="#"><img src="assets/img/logo_3601.png" alt="logo" class="logop"></a>
-        </div>
+          <!--NAVBAR-->
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse barra" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right">
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Opciones<span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#" data-toggle="modal" data-target="#perfil1">Perfil</a></li>
-                <li><a href="#" data-toggle="modal" data-target="#favoritos1">favoritos</a></li>
-                <li><a href="#" data-toggle="modal" data-target="#editar">Editar perfil</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Cerrar sesión</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
-    </nav>
-  </div>
-  <!--aqui en adelante va el codigo-->
-
-  <!-- PAGINA PRINCIPAL -->
-  <div class="col-xs-12 col-lg-12 col-sm-12 col-md-12">
-  <div class="row">
-  <div class="container-fluid caja-3">
-    <img src="assets/img/niñaperfil.jpg" alt="persona" class="perfil img-responsive">
-    <p class="nombreusuario">Nombre de Usuario</p>
-  </div>
-  </div>
-  </div>
-
-  <!-- CAJA DE POSTEO -->
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-lg-3 col-xs-12 col-sm-12">
-        <div class="todo">
-          <div class="cajaposteo">
-            <p>hora: 07:43</p>
-            <p>Les recomiendo morro de salvador de bahia, aqui va un link <span class="cblue">https://www.agoda.com/es-ar/pousada-funny/</span></p>
+          <div class="caja-2 barra">
+            <nav class="navbar navbar-default">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand barra" href="#"><img src="assets/img/logo_3601.png" alt="logo" class="logop"></a>
+                </div>
+                <div class="collapse navbar-collapse barra" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Opciones<span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#" data-toggle="modal" data-target="#perfil1">Perfil</a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#favoritos1">favoritos</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Cerrar sesión</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
           </div>
-          <h3 class="post"><strong>Post</strong></h3>
-          <div class="submenu2">
-            <form>
-              <textarea class="txt" id="comment" placeholder="Añade un comentario..." cols="50" rows="1"></textarea><br>
-              <button type="button" id="btn">Enviar</button>
-            </form>
-          </div>
-          <!-- CONTENEDOR DE MENSAJE -->
-          <div class="cont2">
-            <div id="cont"></div>
-          </div>
-        </div>
-      </div>
-      <!-- ACTUALIZACIONES -->
-      <div class="col-lg-6 col-sm-12 col-xs-12 col-md-12 actualizaciones">
-        <div class="amigo">
-          <h3>Actualizaciones</h3>
-          <hr>
-          <img class="a1" src="assets/img/anamaria.jpg" alt=""> <span>Ana Maria</span><i class="fa fa-star-o" aria-hidden="true"></i>
-          <p class="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, repudiandae quos quibusdam ipsa, architecto cum tempore qui. Vel fuga molestias, repellat veniam, veritatis, hic, consequatur doloribus eos consequuntur in voluptatem!</p>
-          <span class="cblue1">Agregar comentario</span>
-          <hr>
-          <img class="a1" src="assets/img/rodulfo.jpg" alt=""> <span>Rafa G.</span><i class="fa fa-star-o" aria-hidden="true"></i>
-          <p class="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam optio minus dolore porro autem at, ducimus debitis earum deserunt ipsum mollitia, corporis voluptatibus magni id eaque fuga. Temporibus, labore, repellendus!</p>
-          <hr>
-          <img class="a1" src="assets/img/mariana.jpg" alt=""> <span>Ana Maria</span><i class="fa fa-star-o" aria-hidden="true"></i>
-          <p class="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, repudiandae quos quibusdam ipsa, architecto cum tempore qui. Vel fuga molestias, repellat veniam, veritatis, hic, consequatur doloribus eos consequuntur in voluptatem!</p>
-          <span class="cblue1">Agregar comentario</span>
-          <hr>
-          <img class="a1" src="assets/img/mariapaula.jpg" alt=""> <span>Rafa G.</span><i class="fa fa-star-o" aria-hidden="true"></i>
-          <p class="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam optio minus dolore porro autem at, ducimus debitis earum deserunt ipsum mollitia, corporis voluptatibus magni id eaque fuga. Temporibus, labore, repellendus!</p>
-          <span class="cblue1" href="">Agregar comentario</span>
-        </div>
-      </div>
 
       <!-- FOTOS -->
       <div class="col-lg-3 col-sm-3 col-xs-12">
@@ -288,10 +191,17 @@
             <div class="input-group">
               <span class="input-group-addon" id="descripcion">Descripción</span>
               <input id="descripcionInput" type="text" class="form-control" placeholder="Pon una descripción" aria-describedby="descripcion">
+          <!--aqui en adelante va el codigo-->
+
+          <!-- PAGINA PRINCIPAL -->
+          <div class="col-xs-12 col-lg-12 col-sm-12 col-md-12 caja-3">
+            <div class="row">
+              <div class="container caja-3">
+                <img src="assets/img/niñaperfil.jpg" alt="persona" class="perfil img-responsive">
+                <p class="nombreusuario">Nombre de Usuario</p>
+              </div>
+
             </div>
-          <div class="input-group">
-            <span class="input-group-addon" id="url">URL</span>
-            <input id="urlInput" type="text" class="form-control" placeholder="Pon la imagen a pinear" aria-describedby="url">
           </div>
         <button id="btnfotos" type="submit" class="btn btn-default">Guardar</button>
       </form>
@@ -302,13 +212,81 @@
       </div>
       </div>
 
+          <!-- CAJA DE POSTEO -->
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-3 col-xs-12 col-sm-12">
+                <div class="todo">
+                  <div class="cajaposteo">
+                    <p>hora: 07:43</p>
+                    <p>Les recomiendo morro de salvador de bahia, aqui va un link <span class="cblue">https://www.agoda.com/es-ar/pousada-funny/</span></p>
+                  </div>
+                  <h3 class="post"><strong>Post</strong></h3>
+                  <div class="submenu2">
+                    <form>
+                      <textarea class="txt" id="comment" placeholder="Añade un comentario..." cols="50" rows="1"></textarea><br>
+                      <button type="button" id="btn">Enviar</button>
+                    </form>
+                  </div>
+                  <!-- CONTENEDOR DE MENSAJE -->
+                  <div class="cont2">
+                    <div id="cont"></div>
+                  </div>
+                </div>
+              </div>
 
 
+              <!-- ACTUALIZACIONES -->
+              <div class="col-lg-6 col-sm-12 col-xs-12 col-md-12 actualizaciones">
+                <div class="amigo">
+                  <h3>Actualizaciones</h3>
+                  <hr>
+                  <img class="a1" src="assets/img/anamaria.jpg" alt=""> <span>Ana Maria</span><i class="fa fa-star-o" aria-hidden="true"></i>
+                  <p class="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, repudiandae quos quibusdam ipsa, architecto cum tempore qui. Vel fuga molestias, repellat veniam, veritatis, hic, consequatur doloribus eos consequuntur in voluptatem!</p>
+                  <span class="cblue1">Agregar comentario</span>
+                  <hr>
+                  <img class="a1" src="assets/img/rodulfo.jpg" alt=""> <span>Rafa G.</span><i class="fa fa-star-o" aria-hidden="true"></i>
+                  <p class="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam optio minus dolore porro autem at, ducimus debitis earum deserunt ipsum mollitia, corporis voluptatibus magni id eaque fuga. Temporibus, labore, repellendus!</p>
+                  <span class="cblue1" href="">Agregar comentario</span>
+                  <hr>
+                  <img class="a1" src="assets/img/mariana.jpg" alt=""> <span>Ana Maria</span><i class="fa fa-star-o" aria-hidden="true"></i>
+                  <p class="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, repudiandae quos quibusdam ipsa, architecto cum tempore qui. Vel fuga molestias, repellat veniam, veritatis, hic, consequatur doloribus eos consequuntur in voluptatem!</p>
+                  <span class="cblue1">Agregar comentario</span>
+                  <hr>
+                  <img class="a1" src="assets/img/mariapaula.jpg" alt=""> <span>Rafa G.</span><i class="fa fa-star-o" aria-hidden="true"></i>
+                  <p class="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam optio minus dolore porro autem at, ducimus debitis earum deserunt ipsum mollitia, corporis voluptatibus magni id eaque fuga. Temporibus, labore, repellendus!</p>
+                  <span class="cblue1" href="">Agregar comentario</span>
+                </div>
+              </div>
 
+              <!-- FOTOS -->
+              <div class="col-lg-3 col-sm-3 col-xs-12">
+                <div class="fotos">
+                  <h3>Fotos</h3>
+                  <form action="javascript:savePin()">
+                    <div class="input-group">
+                      <span class="input-group-addon" id="descripcion">Descripción</span>
+                      <input id="descripcionInput" type="text" class="form-control" placeholder="Pon una descripción" aria-describedby="descripcion">
+                      <br>
+                    </div>
+                    <div class="input-group">
+                      <span class="input-group-addon" id="url"><i class="fa fa-upload" aria-hidden="true"></i>
+                      </span>
+                      <input id="urlInput" type="text" class="form-control" placeholder="Pon la imagen a pinear" aria-describedby="url">
+                    </div>
+                  </br>
+                  <button id="btnfotos" type="submit" class="btn btn-default">Guardar</button>
+                </form>
+                <div class="container" id="pines">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-    <!--ENLACES JS-->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="https://use.fontawesome.com/788d43088a.js"></script>
-    <script src="assets/js/app.js"></script>
-  </body>
-  </html>
+        <!--ENLACES JS-->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="https://use.fontawesome.com/788d43088a.js"></script>
+        <script src="assets/js/app.js"></script>
+      </body>
+      </html>

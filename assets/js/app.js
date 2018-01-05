@@ -1,6 +1,6 @@
 function splash(param){
-  var time = param; setTimeout(function()
-    { $('#splashscreen').hide(); }, time);
+	var time = param; setTimeout(function()
+		{ $('#splashscreen').hide(); }, time);
 };
 /*aqui va el codigo para crear post*/
 var botonLlamar = document.getElementById("btn");
@@ -33,11 +33,11 @@ var min = minutes();
 function minutes(){
 	min = hora.getUTCMinutes();
 	if(min < 10) {
-	return '0' + min;
+		return '0' + min;
 	} else {
 		return min;
-		}
 	}
+}
 //Creando nodo con formato de hora
 var formatoHora = document.createTextNode(hr + ":" + min);
 
@@ -88,4 +88,26 @@ function savePin() {
         "<div class='rear'>" +
         "</div>" +
         "</div>");
+
+	var titulo = $("#tituloInput").val();
+	var descripcion = $("#descripcionInput").val();
+	var url = $("#urlInput").val();
+
+$("#pines").append("<div id='pin_" + idPin + "' class='pin col-md-3'>" +
+  //Este es el frente
+  "<div class='panel panel-success front'>" +
+  "<div class='panel-heading'>" +
+  "<h3 class='panel-title'>" + titulo + "</h3>" +
+  "</div>" +
+  "<div class = 'panel-body' >" +
+  "<a href='#' class='thumbnail'>" +
+  "<img src='" + url + "' alt='...'>" +
+  "</a>" +
+  "</div>" +
+  "<div class = 'panel-footer' >" + descripcion + "</div> </div>" +
+  //Este es el panel detrás
+  "<div class='rear'>" +
+  "</div>" +
+  "</div>");
+
 };
