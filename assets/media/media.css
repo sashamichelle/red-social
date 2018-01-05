@@ -1,4 +1,6 @@
-/*medias queries para el logo*/
+/**
+*medias queries para el logo
+*/
 @media(max-width:600px){
 	#logo1{
 		height:auto;
@@ -37,9 +39,27 @@
 	.perfil1 {
 		width: 100%;
 	}
+
+	.amigo {
+		margin-top: 4px;
+	}
+
+	.fotos {
+		margin-top: 6px;
+		margin-left: 3px;
+	}
+
+	.fa-star-o:before {
+		content: "\f005";
+		color: yellow;
+		position: relative;
+		font-size: 25px;
+		text-align: right;
+		left: 164px;
+	}
 };
 
-@media(min-width:600px){
+@media(min-width:600px) {
 	#logo1{
 		height:auto;
 		width:50%;
@@ -50,7 +70,10 @@
 	}
 
 	.caja-3 {
-	width:101%;
+		width:101%;
+	}
 
+	.fotos {
+		height: auto;
 	}
 };

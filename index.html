@@ -121,79 +121,74 @@
               </div>
             </div>
           </div>
-          </div><!-- Fin modal de favoritos -->
+        </div><!-- Fin modal de favoritos -->
 
-          
-
-          <!--MODAL PARA AÑADIR O ELMINAR AMIGOS-->
-          <div class="modal fade" id="añadir" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h3 class="titulo" id="myModalLabel"><strong>Registro</strong></h3>
-        </div>
-        <div class="modal-body">
-          <input type="text" class="infor name" placeholder="Nombre y apellido" >
-          <input type="text" class="infor img" placeholder="Url de imagen">
-          
-        </div>
-        <div class="modal-footer">
-          <button id="add" type="button" class="btn btn-default" data-dismiss="modal">Añadir</button>
-        </div>
-      </div>
-    </div>
-  </div>
-<!-- Fin modal añadir o eliminar amigos -->
-
-          <!-- Fin de modales -->
-
-          <!--NAVBAR-->
-
-          <div class="caja-2 barra">
-            <nav class="navbar navbar-default">
-              <div class="container-fluid">
-                <div class="navbar-header">
-                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                  </button>
-                  <a class="navbar-brand barra" href="#"><img src="assets/img/logo_3601.png" alt="logo" class="logop"></a>
-                </div>
-                <div class="collapse navbar-collapse barra" id="bs-example-navbar-collapse-1">
-                  <ul class="nav navbar-nav navbar-right">
-                    <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Opciones<span class="caret"></span></a>
-                      <ul class="dropdown-menu">
-                        <li><a href="#" data-toggle="modal" data-target="#perfil1">Perfil</a></li>
-                        <li><a href="#" data-toggle="modal" data-target="#favoritos1">favoritos</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">Cerrar sesión</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
+        <!--MODAL PARA AÑADIR O ELMINAR AMIGOS-->
+        <div class="modal fade" id="añadir" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" id="añadir" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h3 class="titulo" id="myModalLabel"><strong>Registro</strong></h3>
               </div>
-            </nav>
+              <div class="modal-body">
+                <input type="text" class="infor name" placeholder="Nombre y apellido" >
+                <input type="text" class="infor img" placeholder="Url de imagen">
+              </div>
+              <div class="modal-footer">
+                <button id="add" type="button" class="btn btn-default" data-dismiss="modal">Añadir</button>
+              </div>
+            </div>
           </div>
-                    <!-- PAGINA PRINCIPAL -->
-                    <div class="container-fluid">
-                      <div class="row">
-                      <div class="col-xs-12 col-lg-12 col-sm-12 col-md-12 caja-3 cajita">
-            
+        </div><!-- Fin modal añadir o eliminar amigos -->
+
+        <!-- Fin de modales -->
+
+        <!--NAVBAR-->
+        <div class="caja-2 barra">
+          <nav class="navbar navbar-default">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand barra" href="#"><img src="assets/img/logo_3601.png" alt="logo" class="logop"></a>
+              </div>
+              <div class="collapse navbar-collapse barra" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Opciones<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#" data-toggle="modal" data-target="#perfil1">Perfil</a></li>
+                      <li><a href="#" data-toggle="modal" data-target="#favoritos1">favoritos</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="#">Cerrar sesión</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+
+        <!-- PAGINA PRINCIPAL -->
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xs-12 col-lg-12 col-sm-12 col-md-12 caja-3 cajita">
               <div class="container-fluid caja-3">
                 <img src="assets/img/niñaperfil.jpg" alt="persona" class="perfil img-responsive">
                 <p class="nombreusuario">Nombre de Usuario</p>
+              </div>
             </div>
           </div>
-          </div>
-
+          
           <!-- CAJA DE POSTEO -->
           <div class="container-fluid">
             <div class="row">
-              <div class="col-lg-3 col-xs-12 col-sm-12">
+              <div class="col-lg-3 col-md-3 col-xs-12 col-sm-12">
                 <div class="todo">
                   <div class="cajaposteo">
                     <p>hora: 07:43</p>
@@ -206,6 +201,7 @@
                       <button type="button" id="btn">Enviar</button>
                     </form>
                   </div>
+
                   <!-- CONTENEDOR DE MENSAJE -->
                   <div class="cont2">
                     <div id="cont"></div>
@@ -213,9 +209,8 @@
                 </div>
               </div>
 
-
               <!-- ACTUALIZACIONES -->
-              <div class="col-lg-6 col-sm-12 col-xs-12 col-md-12 actualizaciones">
+              <div class="col-lg-9 col-sm-12 col-xs-12 col-md-9 actualizaciones">
                 <div class="amigo">
                   <h3>Actualizaciones</h3>
                   <hr>
@@ -228,7 +223,7 @@
                   <span class="cblue1" href="">Agregar comentario</span>
                   <hr>
                   <img class="a1" src="assets/img/mariana.jpg" alt=""> <span>Ana Maria</span><i class="fa fa-star-o" aria-hidden="true"></i>
-                  <p class="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, repudiandae quos quibusdam ipsa, architecto cum tempore qui. Vel fuga molestias, repellat veniam, veritatis, hic, consequatur doloribus eos  consequuntur in voluptatem!</p>
+                  <p class="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, repudiandae quos quibusdam ipsa, architecto cum tempore qui. Vel fuga molestias, repellat veniam, veritatis, hic, consequatur doloribus eos consequuntur in voluptatem!</p>
                   <span class="cblue1">Agregar comentario</span>
                   <hr>
                   <img class="a1" src="assets/img/mariapaula.jpg" alt=""> <span>Rafa G.</span><i class="fa fa-star-o" aria-hidden="true"></i>
@@ -236,45 +231,46 @@
                   <span class="cblue1" href="">Agregar comentario</span>
                 </div>
               </div>
+            </div>
+          </div>
 
-              <!-- FOTOS -->
-              <div class="col-lg-3 col-sm-3 col-xs-12">
+          <!-- FOTOS -->
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="fotos">
                   <h3>Fotos</h3>
                   <form action="javascript:savePin()">
                     <div class="input-group">
-                      <span class="input-group-addon" id="descripcion">Descripción</span>
-                      <input id="descripcionInput" type="text" class="form-control" placeholder="Pon una descripción" aria-describedby="descripcion">
-                    </div>
-                    <div class="input-group">
                       <span class="input-group-addon" id="url"><i class="fa fa-upload" aria-hidden="true"></i>
                       </span>
-                      <input id="urlInput" type="text" class="form-control" placeholder="Pon la imagen a pinear" aria-describedby="url">
+                      <input id="urlInput" type="text" class="form-control" placeholder="Descripción" aria-describedby="url">
                     </div>
-                  <button id="btnfotos" type="submit" class="btn btn-default">Guardar</button>
-                </form>
-                <div class="container" id="pines">
+                    <button id="btnfotos" type="submit" class="btn btn-default">Guardar</button>
+                  </form>
+                  <div id="pines">
+                  </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="titcont">
+          <!-- Añadir contactos -->
+          <div class="col-lg-12">
+            <div class="titcont">
               <span class="lineañadir"><span>Añadir contacto</span><a href="#" data-toggle="modal" data-target="#añadir"><i class="fa fa-plus mas" aria-hidden="true"></i></a></span>
-              </div>
-            </div>
-            <div class="col-lg-12">
-              <div id="contcontacto"></div>
             </div>
           </div>
+          <div class="col-lg-12">
+            <div id="contcontacto"></div>
+          </div>
         </div>
-  
+      </div>
 
-        <!--ENLACES JS-->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-        <script src="https://use.fontawesome.com/788d43088a.js"></script>
-        <script src="assets/js/app.js"></script>
-      </body>
-      </html>
+
+      <!--ENLACES JS-->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+      <script src="https://use.fontawesome.com/788d43088a.js"></script>
+      <script src="assets/js/app.js"></script>
+    </body>
+    </html>
