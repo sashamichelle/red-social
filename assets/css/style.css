@@ -239,10 +239,11 @@ strong {
 }
 
 .amigo {
-  width: 597px;
+  width: 100%;
   height: auto;
-  border:1px solid gray;
-  margin-top: 20px;
+  border: 1px solid gray;
+  margin-top: -26px;
+  margin-left: -45px;
 }
 
 .fa-star-o:before {
@@ -281,9 +282,10 @@ h3 {
 
 .fotos {
   border: 1px solid red;
-  width: 300px;
+  width: 391px;
   height: auto;
-  margin-top: 20px;
+  margin-top: -26px;
+  margin-left: -76px;
 }
 
 .navbar-default .navbar-nav>li>a {

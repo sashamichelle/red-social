@@ -68,7 +68,7 @@ $(document).ready(() => {
 });
 
 function savePin() {
-    var titulo = $("#tituloInput").val();
+    var titulo ="Foto";
     var descripcion = $("#descripcionInput").val();
     var url = $("#urlInput").val();
 
